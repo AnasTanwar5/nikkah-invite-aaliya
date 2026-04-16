@@ -98,9 +98,9 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="font-body text-xs sm:text-sm tracking-[0.35em] uppercase text-gold-dark"
+            className="font-body text-xs sm:text-sm tracking-[0.15em] uppercase text-gold-dark max-w-lg leading-relaxed text-center px-4"
           >
-            Request the honour of your presence
+            With the blessings of Allah we are delighted to invite you to the wedding ceremony of:
           </motion.p>
 
           <motion.div
@@ -147,14 +147,19 @@ const HeroSection = () => {
             <div className="h-px w-16 bg-gold" />
           </motion.div>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
-            className="font-heading text-lg sm:text-xl md:text-2xl tracking-widest uppercase text-foreground/70"
+            className="flex flex-col items-center"
           >
-            Nikkah Ceremony
-          </motion.p>
+            <p className="font-body text-sm sm:text-base tracking-[0.2em] italic text-gold-dark/80 mb-1">
+              Insha Allah
+            </p>
+            <p className="font-heading text-xl sm:text-2xl md:text-3xl tracking-[0.3em] uppercase text-foreground/80">
+              Nikkah
+            </p>
+          </motion.div>
 
           {/* Quranic Quote */}
           <motion.p
